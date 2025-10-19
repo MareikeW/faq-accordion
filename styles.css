@@ -1,0 +1,112 @@
+:root {
+  --colors-purple-950: #301534;
+  --colors-purple-600: #8b6990;
+  --colors-purple-100: #f8eeff;
+  --colors-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Work Sans Regular";
+  src: url("./assets/fonts/static/WorkSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans SemiBold";
+  src: url("./assets/fonts/static/WorkSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Work Sans Bold";
+  src: url("./assets/fonts/static/WorkSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  color: var(--colors-purple-950);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 1 - Work Sans Bold - 56px - 66px Line Height - 0% Line Spacing */
+  font-family: "Work Sans Bold";
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.125rem;
+}
+
+summary {
+  color: var(--colors-purple-950);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 2 - Work Sans SemiBold - 18px - 21px Line Height - 0% Line Spacing */
+  font-family: "Work Sans SemiBold";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+}
+
+p,
+.attribution {
+  color: var(--colors-purple-600);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Text Preset 3 - Work Sans Regular - 16px - 24px Line Height - 0% Line Spacing */
+  font-family: "Work Sans Regular";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.background-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-section {
+  flex: 1;
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-size: cover;
+  background-position: center;
+  height: 232px;
+}
+
+.bottom-section {
+  flex: 1;
+  background-color: var(--colors-purple-100);
+}
+
+.modal {
+  display: block; /* Immer sichtbar */
+  position: fixed;
+  z-index: 1000; /* Über der restlichen Seite */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  margin: 15% auto; /* Zentriert das Modal */
+  padding: 1.5rem;
+  width: 80%; /* Breite des Modals */
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--colors-white);
+  box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.1);
+}
+
+@media (min-width: 768px) {
+  .top-section {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+}
