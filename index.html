@@ -12,21 +12,10 @@
     <link href="./styles.css" rel="stylesheet" />
 
     <title>Frontend Mentor | FAQ accordion</title>
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="background-container">
-      <div class="top-section">
-      </div>
+      <div class="top-section"></div>
       <div class="bottom-section"></div>
     </div>
 
@@ -36,7 +25,19 @@
           <img src="assets/images/icon-star.svg" alt="" class="icon" /> FAQs
         </h1>
         <details>
-          <summary>What is Frontend Mentor, and how will it help me?</summary>
+          <summary
+            class="summary"
+            data-icon-open="assets/images/icon-plus.svg"
+            data-icon-closed="assets/images/icon-minus.svg"
+          >
+            What is Frontend Mentor, and how will it help me?
+            <img
+              class="action-icon"
+              src="assets/images/icon-plus.svg"
+              title="Show details about Frontend Mentor"
+              alt="Icon for opening and closing details"
+            />
+          </summary>
           <p>
             Frontend Mentor offers realistic coding challenges to help
             developers improve their frontend coding skills with projects in
@@ -45,7 +46,19 @@
           </p>
         </details>
         <details>
-          <summary>Is Frontend Mentor free?</summary>
+          <summary
+            class="summary"
+            data-icon-open="assets/images/icon-plus.svg"
+            data-icon-closed="assets/images/icon-minus.svg"
+          >
+            Is Frontend Mentor free?
+            <img
+              class="action-icon"
+              src="assets/images/icon-plus.svg"
+              title="Show details on pricing"
+              alt="Icon for opening and closing details"
+            />
+          </summary>
           <p>
             Yes, Frontend Mentor offers both free and premium coding challenges,
             with the free option providing access to a range of projects
@@ -53,7 +66,19 @@
           </p>
         </details>
         <details>
-          <summary>Can I use Frontend Mentor projects in my portfolio?</summary>
+          <summary
+            class="summary"
+            data-icon-open="assets/images/icon-plus.svg"
+            data-icon-closed="assets/images/icon-minus.svg"
+          >
+            Can I use Frontend Mentor projects in my portfolio?
+            <img
+              class="action-icon"
+              src="assets/images/icon-plus.svg"
+              title="Show details on portfolio use"
+              alt="Icon for opening and closing details"
+            />
+          </summary>
           <p>
             Yes, you can use projects completed on Frontend Mentor in your
             portfolio. It's an excellent way to showcase your skills to
@@ -61,7 +86,18 @@
           </p>
         </details>
         <details>
-          <summary>How can I get help if I'm stuck on a Frontend Mentor challenge?
+          <summary
+            class="summary"
+            data-icon-open="assets/images/icon-plus.svg"
+            data-icon-closed="assets/images/icon-minus.svg"
+          >
+            How can I get help if I'm stuck on a Frontend Mentor challenge?
+            <img
+              class="action-icon"
+              src="assets/images/icon-plus.svg"
+              title="Show details on how to get help"
+              alt="Icon for opening and closing details"
+            />
           </summary>
           <p>
             The best place to get help is inside Frontend Mentor's Discord
@@ -71,13 +107,14 @@
         </details>
       </div>
     </div>
-  </body>
-  <footer>
+
+    <footer>
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">MareikeW</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/MareikeW" target="_blank">MareikeW</a>.
     </div>
   </footer>
+    <script src="script.js"></script>
+  </body>
+  
 </html>
