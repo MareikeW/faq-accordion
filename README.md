@@ -11,8 +11,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Built with](#built-with)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/MareikeW/faq-accordion)
+- Live Site URL: [FAQ accordion](https://mareikew.github.io/faq-accordion/)
 
 ### Built with
 
